@@ -11,7 +11,7 @@ To get the camera feed and vision to appear in the GUI we used OpenCV2.
 	run these commands: 	
 			"sudo apt-get install python3-opencv"
 
-Make sure you have a camera module connected that can be recognized by the Pi. As well as i2c.
+Make sure you have a camera module connected that can be recognized by the Pi. As well as i2c. And remote GPiO
 	You can make sure it is enabled using: "raspi-config" 
 	
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EXECUTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

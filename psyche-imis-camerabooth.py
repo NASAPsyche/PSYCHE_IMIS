@@ -80,7 +80,10 @@ class App:
         ret, frame = self.vid.get_frame()
  
         if ret:
-             cv2.imwrite("sample-" + time.strftime("%d-%m-%Y_%H-%M-%S") + ".jpg", cv2.cvtColor(frame, cv2.COLOR_RGB2BGR))
+            print("sample-" + time.strftime("%d-%m-%Y_%H-%M-%S") + ".tiff")
+            cv2.imwrite("sample-" + time.strftime("%d-%m-%Y_%H-%M-%S") + ".tiff", cv2.cvtColor(frame, cv2.COLOR_RGB2BGR))
+            #cv2.imwrite("sample-" + time.strftime("%d-%m-%Y_%H-%M-%S") + ".png", cv2.cvtColor(frame, cv2.COLOR_RGB2BGR))
+            #cv2.imwrite("sample-" + time.strftime("%d-%m-%Y_%H-%M-%S") + ".jpeg", cv2.cvtColor(frame, cv2.COLOR_RGB2BGR))
  
     def update(self):
          # Get a frame from the video source
