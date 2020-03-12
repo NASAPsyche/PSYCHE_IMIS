@@ -22,6 +22,8 @@ channel_0.duty_cycle = 0xffff
 
 
 #SETUP comms on IMU - 9DOF FXOS8700 + FXAS21002
+#sudo pip3 install adafruit-circuitpython-fxos8700
+#sudo pip3 install adafruit-circuitpython-fxas21002c
 #example https://learn.adafruit.com/nxp-precision-9dof-breakout/python-circuitpython
 import board
 import busio
@@ -42,3 +44,7 @@ gyro_x, gyro_y, gyro_z = sensor.gyroscope
 print('Acceleration (m/s^2): ({0:0.3f}, {1:0.3f}, {2:0.3f})'.format(accel_x, accel_y, accel_z)) # you could also do .format(*fxos.accelerometer)
 print('Magnetometer (uTesla): ({0:0.3f}, {1:0.3f}, {2:0.3f})'.format(mag_x, mag_y, mag_z))
 print('Gyroscope (radians/s): ({0:0.3f},  {1:0.3f},  {2:0.3f})'.format(gyro_x, gyro_y, gyro_z))
+
+#SETUP VL53L0X - tof
+#sudo pip3 install adafruit-circuitpython-vl53l0x
+#https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/python-circuitpython
