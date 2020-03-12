@@ -1,4 +1,4 @@
- #SETUP comms on PCA9685
+#SETUP comms on PCA9685
 #remember to install adafruit_circuitpython using 'sudo pip3 install adafruit-circuitpython-pca9685' 
 #as well as 'sudo pip3 install adafruit-circuitpython-servokit' 
 #example https://learn.adafruit.com/16-channel-pwm-servo-driver/python-circuitpython 
